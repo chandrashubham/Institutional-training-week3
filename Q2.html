@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Worksheet3_q2</title>
+    <style>
+        body{
+            background-color: lightcoral;
+            text-align: center;
+            font-family:'Times New Roman', Times, serif;
+            color:rgb(20, 12, 90);
+        }
+    </style>
+</head>
+<body>
+
+    <h1><u>FUNCTIONS</u></h1> <hr >
+    <h2 id="fn1"></h2>
+    <h2 id="fn2"></h2>
+    <h2 id="fn3"></h2>
+    <h2 id="fn4"></h2>
+    <h2 id="fn5"></h2>
+    <h2 id="fn6"></h2>
+    <h2 id="fn7"></h2>
+    <h2 id="fn8"></h2>
+    <hr>
+
+    <script>
+        var name = "Shubham Kumar Chandrabansi";
+       
+        // funtion that returns text
+
+        function func1()
+        {
+            return(name);
+        }
+
+        document.getElementById("fn1").innerHTML= "Text : "+func1(name);
+
+        // function returning number of elements in the string
+
+        function func2(name)
+        {
+            return(name.length)
+        }
+
+        document.getElementById("fn2").innerHTML= "Number of characters : "+func2(name);
+
+        // function returning Uppercase
+
+        function func3(name)
+        {
+            return name.toUpperCase();
+        }
+
+        document.getElementById("fn3").innerHTML= "UPPERCASE : "+func3(name);
+
+        // function returning lowercase
+
+        function func4(name)
+        {
+            return name.toLowerCase();
+        }
+
+        document.getElementById("fn4").innerHTML= "lowercase: "+func4(name);
+
+        // function returning Replaced text
+
+        function func5(name)
+        {
+            return name.replace("Chandrabansi","Chandra");
+        }
+
+        document.getElementById("fn5").innerHTML= "Replaced Text : "+func5(name);
+
+        // function returning Hypotenuse
+
+        function func6(s1,s2)
+        {
+            let hyp= Math.sqrt((s1*s1)+(s2*s2));
+            return hyp;
+
+        }
+
+        document.getElementById("fn6").innerHTML= "Hypotenuse for Base 5 and Height 12: "+func6(5,12);
+
+        // function returning accounts and surchanges
+        
+        function func7(num1,num2)
+        {
+            return num1+num2;
+        }
+
+        document.getElementById("fn7").innerHTML= "Addition of Amounts : "+func7(420,240);
+
+        // function returning first element of array
+
+        arr=["Priya","Shubham","Neha","Devansh","Himanshu"]
+
+        function func8(arr)
+        {
+            return arr[0];
+        }
+
+        document.getElementById("fn8").innerHTML= "First Element of Array: "+func8(arr);
+
+
+        document.write(text());
+    </script>
+    
+</body>
+</html>
